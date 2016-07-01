@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumino - Forms</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body dir=rtl>
+	<nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">تعویض ناوبری</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand " href="#"><span>Lumino</span>مدیر</a>
+				<ul class="user-menu ">
+					<li class="dropdown pull-right ">
+						<a href="#" class="dropdown-toggle draw" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> کاربر <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> پروفایل</a></li>
+							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> تنظیمات</a></li>
+							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> خروج</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse " class="col-sm-3 col-lg-2 sidebar ">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> داشبورد</a></li>
+			<li><a href="widgets.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> ابزار</a></li>
+			<li><a href="charts.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> نمودارها</a></li>
+			<li><a href="tables.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> جدول ها</a></li>
+			<li class="active"><a href="forms.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> فرم ها</a></li>
+			<li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> هشدارها &amp; پنل ها</a></li>
+			<li><a href="icons.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> آیکن ها</a></li>
+			<li class="parent ">
+				<a href="#">
+					<span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Dropdown 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> عنصر1
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> عنصر2
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> عنصر 3
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> صفحه ورود</a></li>
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main drow">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+				<li class="active">آیکن ها</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row ">
+			<div class="col-lg-12 draw">
+				<h1 class="page-header">فرم ها</h1>
+			</div>
+		</div><!--/.row-->
+				
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">فرم عناصر</div>
+					<div class="panel-body">
+						<div class="col-md-6">
+							<form role="form">
+							
+								<div class="form-group">
+									<label>متن ورودی</label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+																
+								<div class="form-group">
+									<label>رمز</label>
+									<input type="password" class="form-control">
+								</div>
+								
+								<div class="form-group checkbox">
+								  <label>
+								    <input type="checkbox">مرابخاطربسپار</label>
+								</div>
+																
+								<div class="form-group">
+									<label>فایل ورودی</label>
+									<input type="file">
+									 <p class="help-block">به عنوان مثال سطح بلوک به متن کمک میکند.</p>
+								</div>
+								
+								<div class="form-group">
+									<label>محدوده ی متن</label>
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+								
+								<label>اعتبار سنجی</label>
+								<div class="form-group has-success">
+									<input class="form-control" placeholder="موفق">
+								</div>
+								<div class="form-group has-warning">
+									<input class="form-control" placeholder="هشدار">
+								</div>
+								<div class="form-group has-error">
+									<input class="form-control" placeholder="خطا">
+								</div>
+								
+							</div>
+							<div class="col-md-6" >
+							
+								<div class="form-group">
+									<label>جعبه</label>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">&nbsp;&nbsp;&nbspجعبه 1
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">&nbsp;&nbsp;&nbspجعبه 2
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">&nbsp;&nbsp;&nbspجعبه 3
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">&nbsp;&nbsp;&nbspجعبه 4
+										</label>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label>دکمه های کنترلی</label>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > &nbsp;&nbsp;&nbsp دکمه های کنترلی 1
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> &nbsp;&nbsp;&nbsp دکمه های کنترلی 2
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> &nbsp;&nbsp;&nbsp دکمه های کنترلی 3
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> &nbsp;&nbsp;&nbsp دکمه های کنترلی 4
+										</label>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label>انتخاب ها</label>
+									<select class="form-control">
+										<option>گزینه 1</option>
+										<option>گزینه 2</option>
+										<option>گزینه 3</option>
+										<option>گزینه 4</option>
+									</select>
+								</div>
+								
+								<div class="form-group">
+									<label>انتخاب های چندگانه</label>
+									<select multiple class="form-control">
+										<option>انتخاب 1</option>
+										<option>انتخاب 2</option>
+										<option>انتخاب 3</option>
+										<option>انتخاب 4</option>
+									</select>
+								</div>
+								
+								<button type="submit" class="btn btn-primary">ثبت کردن دکمه</button>
+								<button type="reset" class="btn btn-default">دکمه تنظیم مجدد</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div><!-- /.col-->
+		</div><!-- /.row -->
+		
+	</div><!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>
